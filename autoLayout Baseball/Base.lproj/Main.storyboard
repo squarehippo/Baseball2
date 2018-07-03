@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout_Baseball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="stadium" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-e0-7ar">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.730650723" green="0.92734390499999997" blue="0.33067807219444439" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-Cy-h04">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBf-wA-Dut">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pro Baseball Handicapper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klX-U3-glh">
+                                                <rect key="frame" x="19" y="69.5" width="337" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Jones Brothers 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qX7-HB-eZo">
+                                                <rect key="frame" x="38" y="11" width="299.5" height="58.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1038140191" green="0.44058438309999998" blue="1" alpha="0.68519905821917804" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="qX7-HB-eZo" firstAttribute="width" secondItem="FBf-wA-Dut" secondAttribute="width" multiplier="0.8" id="1BI-0s-kpE"/>
+                                            <constraint firstItem="klX-U3-glh" firstAttribute="top" secondItem="qX7-HB-eZo" secondAttribute="bottom" id="7iL-TT-CVz"/>
+                                            <constraint firstItem="qX7-HB-eZo" firstAttribute="centerX" secondItem="FBf-wA-Dut" secondAttribute="centerX" id="Ccr-cY-MRb"/>
+                                            <constraint firstItem="qX7-HB-eZo" firstAttribute="top" secondItem="FBf-wA-Dut" secondAttribute="top" constant="11" id="DG6-pC-iwx"/>
+                                            <constraint firstAttribute="height" constant="130" id="my9-LV-f7f"/>
+                                            <constraint firstItem="klX-U3-glh" firstAttribute="width" secondItem="FBf-wA-Dut" secondAttribute="width" multiplier="0.9" id="upy-ZF-Lkg"/>
+                                            <constraint firstItem="klX-U3-glh" firstAttribute="centerX" secondItem="FBf-wA-Dut" secondAttribute="centerX" id="vKb-ua-s1M"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLi-9U-bkR">
+                                        <rect key="frame" x="19" y="318.5" width="337.5" height="60"/>
+                                        <color key="backgroundColor" red="0.80257127702538733" green="0.54173672616556268" blue="0.18389851905498558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4CW-84-Pby"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="SUMMARY OF GAMES">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDg-Nc-N8w">
+                                        <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not responsible for errors in data." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziT-TQ-Vug">
+                                                <rect key="frame" x="27" y="153" width="288" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.69290453770000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-Uc-G3l">
+                                                <rect key="frame" x="19" y="11.5" width="337" height="78"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About this App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="252-wm-KGc">
+                                                        <rect key="frame" x="95.5" y="0.0" width="146.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For amusement purposes only." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-rc-KoB">
+                                                        <rect key="frame" x="63" y="24" width="211" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.69290453767123283" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games are selected based on the next day pro baseball  games are scheduled." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-Dt-2oI">
+                                                        <rect key="frame" x="7.5" y="42" width="322.5" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.69290453770000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.3694309542805555" blue="0.82533094618055558" alpha="0.91954730308219179" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="3Yg-Uc-G3l" firstAttribute="centerY" secondItem="MDg-Nc-N8w" secondAttribute="centerY" id="5Fb-T2-UE8"/>
+                                            <constraint firstItem="3Yg-Uc-G3l" firstAttribute="width" secondItem="MDg-Nc-N8w" secondAttribute="width" multiplier="0.9" id="H0j-DR-p6G"/>
+                                            <constraint firstItem="3Yg-Uc-G3l" firstAttribute="centerX" secondItem="MDg-Nc-N8w" secondAttribute="centerX" id="j29-xh-Z5e"/>
+                                            <constraint firstAttribute="height" constant="100" id="jTW-im-BV6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MDg-Nc-N8w" secondAttribute="bottom" id="FED-io-o6c"/>
+                                    <constraint firstAttribute="trailing" secondItem="MDg-Nc-N8w" secondAttribute="trailing" id="P8S-03-61q"/>
+                                    <constraint firstItem="FBf-wA-Dut" firstAttribute="top" secondItem="oM5-Cy-h04" secondAttribute="top" id="aho-We-WLm"/>
+                                    <constraint firstAttribute="trailing" secondItem="FBf-wA-Dut" secondAttribute="trailing" id="h0H-Av-DX0"/>
+                                    <constraint firstItem="MDg-Nc-N8w" firstAttribute="leading" secondItem="oM5-Cy-h04" secondAttribute="leading" id="uwG-mU-EqG"/>
+                                    <constraint firstItem="aLi-9U-bkR" firstAttribute="width" secondItem="oM5-Cy-h04" secondAttribute="width" multiplier="0.9" id="xLR-y4-y8k"/>
+                                    <constraint firstItem="FBf-wA-Dut" firstAttribute="leading" secondItem="oM5-Cy-h04" secondAttribute="leading" id="yJI-b8-KkL"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="h5B-k3-ad7"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oM5-Cy-h04" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3N0-A3-0WI"/>
+                            <constraint firstItem="oM5-Cy-h04" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uiq-mf-tdm"/>
+                            <constraint firstItem="2wC-Qy-eKI" firstAttribute="trailing" secondItem="oM5-Cy-h04" secondAttribute="trailing" id="WQG-DW-b14"/>
+                            <constraint firstItem="2wC-Qy-eKI" firstAttribute="bottom" secondItem="oM5-Cy-h04" secondAttribute="bottom" id="x8Y-0H-OE7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2wC-Qy-eKI"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-368.36581709145429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stadium" width="1200" height="526"/>
+    </resources>
+</document>
